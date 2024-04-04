@@ -121,6 +121,8 @@ USE_TZ = True
 # Specify a location to copy static files to when running python manage.py collectstatic
 STATIC_ROOT = os.path.join(BASE_DIR, 'www', 'static')
 
+#  Line of code defines the URL prefix used to reference static files
+#  (such as CSS, JavaScript, and images) in Django templates
 STATIC_URL = '/static/'
 
 # Media URL, for user-created media - becomes part of URL when images are displayed

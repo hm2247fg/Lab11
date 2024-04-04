@@ -26,5 +26,7 @@ urlpatterns = [
     path('', include('travel_wishlist.urls'))
 ]
 
+# Conditional statement checks if the application is running in debug mode
+# If it is, then it adds a URL pattern to serve media files
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
